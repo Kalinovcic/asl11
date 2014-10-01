@@ -23,7 +23,9 @@
 
 #include "asl11.h"
 
-void test(void* state)
+void test(struct AVM_ABY* aby)
 {
-    printf("hello world!\n");
+    AVM_i32 val;
+    AVM_stack_pop(aby->threadv->stack, &val, 4);
+    printf("hello world! %d\n", val);
 }

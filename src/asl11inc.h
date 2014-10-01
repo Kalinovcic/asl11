@@ -15,21 +15,15 @@
  * with this program; if not, write to the Free Software Foundation, Inc.,
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  * 
- * File: asl11.h
+ * File: asl11inc.h
  * Description: 
  * Author: Lovro Kalinovcic
  * 
  */
 
-#ifndef ASL11_H_
-#define ASL11_H_
+#ifndef ASL11INC_H_
+#define ASL11INC_H_
 
-#include <aby.h>
-#include <stack.h>
-#include <atype.h>
+extern int printf (const char *__restrict __format, ...);
 
-#include "asl11inc.h"
-
-void test(struct AVM_ABY* aby);
-
-#endif /* ASL11_H_ */
+#endif /* ASL11INC_H_ */
